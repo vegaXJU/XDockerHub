@@ -15,4 +15,5 @@
 # ==============================================================================
 
 
-jupyter notebook "$@"
+# jupyter notebook "$@"
+jupyter notebook "/notebooks"

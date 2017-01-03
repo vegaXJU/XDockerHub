@@ -50,6 +50,9 @@ RUN pip --no-cache-dir install \
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/
 
+# change the run_jupyter.sh's authority.
+RUN chmod 755 /run_jupyter.sh
+
 # Copy sample notebooks.
 COPY notebooks /notebooks
 
